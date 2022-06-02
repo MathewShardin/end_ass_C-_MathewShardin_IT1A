@@ -1,2 +1,2 @@
-# end_ass_C-_MathewShardin_IT1A
-End assignment for Programming in C# by Mathew Shardin
+# Final C# Assignment - Skating Championship
+Mathew Shardin, 1st year student, NHL Stenden Emmen
