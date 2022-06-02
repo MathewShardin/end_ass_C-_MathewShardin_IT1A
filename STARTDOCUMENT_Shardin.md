@@ -95,3 +95,7 @@ Tables below provide information about test cases. All tests are performed with 
 | 2    | sk02  | sk02                  |                 |
 | 3    |       | sk01.getTotalPoints() | 464180          |
 | 4    |       | sk02.getTotalPoints() | 645767.3        |
+
+## Graphical User Interface
+
+![GUI](GUI_Mathew_Shardin.png "Version 1 global GUI")
