@@ -55,7 +55,7 @@ The tabe below provides all the calculation done by the application.
 ## Class Diagram
 
 
-![Class Diagram](Class_Diagram_Shardin_C#.png "Version 1.1 Class Diagram")
+![Class Diagram](Class_Diagram_Shardin_C.png "Version 1.1 Class Diagram")
 
 ## Test Plan
 **Test Data**
