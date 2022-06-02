@@ -13,7 +13,7 @@ can be entered for each consecutive competitor. The points total of each skater
 must then be calculated and shown, as well as who the winner is. 
 
 A speed skating board of juries needs an application that helps to determine a winner in a competition. The programm must track the following things:
-1.  Times (format mmsshh) for 500, 5000, 1500, 10000 meter distances
+1.  Times (format hh:mm:ss.hhh) for 500, 5000, 1500, 10000 meter distances
 2.  Names of the athletes
 3.  Total number of points
 
@@ -34,10 +34,10 @@ In this section the inputs and outputs of the application are described. The tab
 | Case          | Data Type | Conditions |
 |---------------|-----------|------------|
 | Skater's name | String    | Not empty  |
-| 500m time     | DateTime  | `time`>0   |
-| 5000m time    | DateTime  | `time`>0   |
-| 1500m time    | DateTime  | `time`>0   |
-| 10000m time   | DateTime  | `time`>0   |
+| 500m time     | String  | `time` in format hh:mm:ss.hhh   |
+| 5000m time    | String  | `time` in format hh:mm:ss.hhh   |
+| 1500m time    | String  | `time` in format hh:mm:ss.hhh   |
+| 10000m time   | String  | `time` in format hh:mm:ss.hhh   |
 
 The table below provides all the outputs a user can see.
 | Case                   | Data Type |
@@ -49,8 +49,8 @@ The table below provides all the outputs a user can see.
 The tabe below provides all the calculation done by the application.
 | Case                             | Calculation                                                  |
 |----------------------------------|--------------------------------------------------------------|
-| Convert times to a 500m distance | `DateTime converted to unix timestamp`/(`distance`/500)      |
-| Total number of points           | Sum of `time` for all distances converted to a 500m distance |
+| Convert times to a 500m distance | `DateTime converted to integer milliseconds`/(`distance`/500)      |
+| Total number of points           | Sum of `time` in milliseconds for all distances converted to a 500m distance |
 
 ## Class Diagram
 
@@ -68,7 +68,28 @@ The tables below provide the data used for testing.
 |      | 500m time: 00:01:01.069   | sk02.register500mTime("00:01:01.069");    |
 |      | 1500m: 00:02:12.244       | sk02.register1500mTime("00:02:12.244");   |
 |      | 5000m time: 00:43:24.056  | sk02.register5000mTime("00:43:24.056");   |
-|      | 10000m time: 00:33:24.056 | sk02.register500mTime("00:01:30.228");    |
+|      | 10000m time: 01:33:24.228 | sk02.register10000mTime("01:33:24.228");  |
 
 **Test Cases**
 Tables below provide information about test cases. All tests are performed with the test data (described above)
+
+1.**Get Winner**
+| Step | Input        | Action                                    | Expected output |
+|------|--------------|-------------------------------------------|-----------------|
+| 1    | sk01         | sk01                                      |                 |
+| 2    | sk02         | sk02                                      |                 |
+| 3    | Button Click | Winner.getWinner()                        | "Fillipe Mota"  |
+| 4    | sk03         | Skater sk03 = new Skater("Chris Joslin"); |                 |
+| 5    | 00:00:10.126 | sk03.register500mTime("00:00:10.126")     |                 |
+| 6    | 00:00:12.126 | sk03.register1500mTime("00:00:12.126")    |                 |
+| 7    | 00:00:20.126 | sk03.register5000mTime("00:00:20.126")    |                 |
+| 8    | 00:00:30.126 | sk03.register10000mTime("00:00:30.126")   |                 |
+| 9    | Button Click | Winner.getWinner()                        | "Chris Joslin"  |
+
+2. **Display Total Points**
+| Step | Input | Action                | Expected output |
+|------|-------|-----------------------|-----------------|
+| 1    | sk01  | sk01                  |                 |
+| 2    | sk02  | sk02                  |                 |
+| 3    |       | sk01.getTotalPoints() | 464180          |
+| 4    |       | sk02.getTotalPoints() | 645767.3        |
