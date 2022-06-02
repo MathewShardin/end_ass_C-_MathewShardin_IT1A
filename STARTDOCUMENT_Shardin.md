@@ -74,6 +74,7 @@ The tables below provide the data used for testing.
 Tables below provide information about test cases. All tests are performed with the test data (described above)
 
 1.**Get Winner**
+
 | Step | Input        | Action                                    | Expected output |
 |------|--------------|-------------------------------------------|-----------------|
 | 1    | sk01         | sk01                                      |                 |
@@ -87,6 +88,7 @@ Tables below provide information about test cases. All tests are performed with 
 | 9    | Button Click | Winner.getWinner()                        | "Chris Joslin"  |
 
 2. **Display Total Points**
+
 | Step | Input | Action                | Expected output |
 |------|-------|-----------------------|-----------------|
 | 1    | sk01  | sk01                  |                 |
