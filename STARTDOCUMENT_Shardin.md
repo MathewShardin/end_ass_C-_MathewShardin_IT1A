@@ -51,3 +51,24 @@ The tabe below provides all the calculation done by the application.
 |----------------------------------|--------------------------------------------------------------|
 | Convert times to a 500m distance | `DateTime converted to unix timestamp`/(`distance`/500)      |
 | Total number of points           | Sum of `time` for all distances converted to a 500m distance |
+
+## Class Diagram
+
+## Test Plan
+**Test Data**
+The tables below provide the data used for testing.
+| Id   | Input                     | Code                                      |
+|------|---------------------------|-------------------------------------------|
+| sk01 | Name: "Fillipe Mota"      | Skater sk01 = new Skater("Fillipe Mota"); |
+|      | 500m time: 00:00:45.126   | sk01.register500mTime("00:00:45.126");    |
+|      | 1500m time: 00:01:45.126  | sk01.register1500mTime("00:01:45.126");   |
+|      | 5000m time: 00:33:24.056  | sk01.register5000mTime("00:33:24.056");   |
+|      | 10000m time: 01:01:12.128 | sk01.register10000mTime("01:01:12.128");  |
+| sk02 | Name: "Jamie Foy"         | Skater sk02 = new Skater("Jamie Foy");    |
+|      | 500m time: 00:01:01.069   | sk02.register500mTime("00:01:01.069");    |
+|      | 1500m: 00:02:12.244       | sk02.register1500mTime("00:02:12.244");   |
+|      | 5000m time: 00:43:24.056  | sk02.register5000mTime("00:43:24.056");   |
+|      | 10000m time: 00:33:24.056 | sk02.register500mTime("00:01:30.228");    |
+
+**Test Cases**
+Tables below provide information about test cases. All tests are performed with the test data (described above)
