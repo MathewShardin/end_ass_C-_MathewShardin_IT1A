@@ -88,7 +88,8 @@ Tables below provide information about test cases. All tests are performed with 
 | 6    |Input test data for 1500m|00:00:12.126|                 |
 | 7    |Input test data for 5000m|00:00:20.126|                 |
 | 8    |Input test data for 10000m| 00:00:30.126 |                 |
-| 9    | Button Click | Press "Update" button on "Winner" page| "Chris Joslin"  |
+| 9    |Button click| Press "Save" button on "Add+" page |                 |
+| 10   | Button Click | Press "Update" button on "Winner" page| "Chris Joslin"  |
 
 2. **Display Total Points**
 
@@ -98,6 +99,16 @@ Tables below provide information about test cases. All tests are performed with 
 | 2    |Input test data SK01|Press "Save" button on "Add+" page||
 | 3    |Open "Result" page|Look at "Fillipe Mota" record| 464180|
 | 4    |Open "Result" page|Look at "Jamie Foy" record| 645767.3 |
+
+3. **Clear all results**
+
+| Step | Input | Action                | Expected output |
+|------|-------|-----------------------|-----------------|
+| 1    |Input test data SK01|Press "Save" button on "Add+" page||
+| 2    |Input test data SK01|Press "Save" button on "Add+" page||
+| 3    |Open "Result" page|Look at "Fillipe Mota" record| 464180|
+| 4    |Open "Result" page|Look at "Jamie Foy" record| 645767.3 |
+| 5    |Button click|Press "Clear" button|Empty results table|
 
 ## Graphical User Interface
 
