@@ -113,3 +113,8 @@ Tables below provide information about test cases. All tests are performed with 
 ## Graphical User Interface
 
 ![GUI](GUI_Mathew_Shardin.png "Version 1 global GUI")
+
+## ERD
+
+![ERD](Final_Ass_ERD.drawio.png "Version 1 ERD")
+
