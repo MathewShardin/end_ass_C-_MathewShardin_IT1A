@@ -80,24 +80,24 @@ Tables below provide information about test cases. All tests are performed with 
 
 | Step | Input        | Action                                    | Expected output |
 |------|--------------|-------------------------------------------|-----------------|
-| 1    | sk01         | sk01                                      |                 |
-| 2    | sk02         | sk02                                      |                 |
-| 3    | Button Click | Winner.getWinner()                        | "Fillipe Mota"  |
-| 4    | sk03         | Skater sk03 = new Skater("Chris Joslin"); |                 |
-| 5    | 00:00:10.126 | sk03.registerTime("00:00:10.126", 500)     |                 |
-| 6    | 00:00:12.126 | sk03.registerTime("00:00:12.126", 1500)    |                 |
-| 7    | 00:00:20.126 | sk03.registerTime("00:00:20.126", 5000)    |                 |
-| 8    | 00:00:30.126 | sk03.registerTime("00:00:30.126", 10000)   |                 |
-| 9    | Button Click | Winner.getWinner()                        | "Chris Joslin"  |
+| 1    | Input test data SK01| Press "Save" button on "Add+" page|                 |
+| 2    | Input test data SK02| Press "Save" button on "Add+" page|                 |
+| 3    | Button Click| Press "Update" button on "Winner" page| "Fillipe Mota"  |
+| 4    |Input test data for 3rd skater on "Add+" page|name = "Chris Joslin" |                 |
+| 5    |Input test data for 500m|00:00:10.126 |                 |
+| 6    |Input test data for 1500m|00:00:12.126|                 |
+| 7    |Input test data for 5000m|00:00:20.126|                 |
+| 8    |Input test data for 10000m| 00:00:30.126 |                 |
+| 9    | Button Click | Press "Update" button on "Winner" page| "Chris Joslin"  |
 
 2. **Display Total Points**
 
 | Step | Input | Action                | Expected output |
 |------|-------|-----------------------|-----------------|
-| 1    | sk01  | sk01                  |                 |
-| 2    | sk02  | sk02                  |                 |
-| 3    |       | sk01.getTotalPoints() | 464180          |
-| 4    |       | sk02.getTotalPoints() | 645767.3        |
+| 1    |Input test data SK01|Press "Save" button on "Add+" page||
+| 2    |Input test data SK01|Press "Save" button on "Add+" page||
+| 3    |Open "Result" page|Look at "Fillipe Mota" record| 464180|
+| 4    |Open "Result" page|Look at "Jamie Foy" record| 645767.3 |
 
 ## Graphical User Interface
 
