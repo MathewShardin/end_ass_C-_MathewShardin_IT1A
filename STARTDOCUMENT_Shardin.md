@@ -55,7 +55,7 @@ The tabe below provides all the calculation done by the application.
 ## Class Diagram
 
 
-![Class Diagram](Class_Diagram_Shardin_C.png "Version 1.1 Class Diagram")
+![Class Diagram](Class_Diagram_Shardin.png "Version 1.1 Class Diagram")
 
 ## Test Plan
 **Test Data**
@@ -76,7 +76,7 @@ The tables below provide the data used for testing.
 **Test Cases**
 Tables below provide information about test cases. All tests are performed with the test data (described above)
 
-1.**Get Winner**
+1. **Get Winner**
 
 | Step | Input        | Action                                    | Expected output |
 |------|--------------|-------------------------------------------|-----------------|
