@@ -55,23 +55,17 @@ The tabe below provides all the calculation done by the application.
 ## Class Diagram
 
 
-![Class Diagram](Class_Diagram_Shardin.png "Version 1.1 Class Diagram")
+![Class Diagram](Class_Diagram_Shardin.png "Version 1.2 Class Diagram")
 
 ## Test Plan
 **Test Data**
 The tables below provide the data used for testing.
-| Id   | Input                     |
-|------|---------------------------|
-| sk01 | Name: "Fillipe Mota"      | 
-|      | 500m time: 00:00:45.126   | 
-|      | 1500m time: 00:01:45.126  | 
-|      | 5000m time: 00:33:24.056  | 
-|      | 10000m time: 01:01:12.128 | 
-| sk02 | Name: "Jamie Foy"         | 
-|      | 500m time: 00:01:01.069   | 
-|      | 1500m: 00:02:12.244       | 
-|      | 5000m time: 00:43:24.056  |
-|      | 10000m time: 01:33:24.228 |
+
+| **Input**    |              |              |              |              | **Output**   |
+|--------------|--------------|--------------|--------------|--------------|--------------|
+| Name         | 500m         | 1500m        | 5000m        | 10000m       | Total Points |
+| Fillipe Mota | 00:00:45.126 | 00:01:45.126 | 00:33:24.056 | 01:01:12.128 | 464180       |
+| Jamie Foy    | 00:01:01.069 | 00:02:12.244 | 00:43:24.056 | 01:33:24.228 | 645767.3     |
 
 **Test Cases**
 Tables below provide information about test cases. All tests are performed with the test data (described above)
@@ -80,35 +74,29 @@ Tables below provide information about test cases. All tests are performed with 
 
 | Step | Input        | Action                                    | Expected output |
 |------|--------------|-------------------------------------------|-----------------|
-| 1    | Input test data SK01| Press "Save" button on "Add+" page|                 |
-| 2    | Input test data SK02| Press "Save" button on "Add+" page|                 |
-| 3    | Button Click| Press "Update" button on "Winner" page| "Fillipe Mota"  |
-| 4    |Input test data for 3rd skater on "Add+" page|name = "Chris Joslin" |                 |
-| 5    |Input test data for 500m|00:00:10.126 |                 |
-| 6    |Input test data for 1500m|00:00:12.126|                 |
-| 7    |Input test data for 5000m|00:00:20.126|                 |
-| 8    |Input test data for 10000m| 00:00:30.126 |                 |
-| 9    |Button click| Press "Save" button on "Add+" page |                 |
-| 10   | Button Click | Press "Update" button on "Winner" page| "Chris Joslin"  |
+| 1    | Button Click| Press "Update" button on "Winner" page| "Fillipe Mota"  |
+| 2    |Input test data for 3rd skater on "Add+" page|name = "Chris Joslin" |  |
+| 3    |Input test data for 500m|00:00:10.126 |                 |
+| 4    |Input test data for 1500m|00:00:12.126|                 |
+| 5    |Input test data for 5000m|00:00:20.126|                 |
+| 6    |Input test data for 10000m| 00:00:30.126 |                 |
+| 7    |Button click| Press "Save" button on "Add+" page |                 |
+| 8   | Button Click | Press "Update" button on "Winner" page| "Chris Joslin"  |
 
 2. **Display Total Points**
 
 | Step | Input | Action                | Expected output |
 |------|-------|-----------------------|-----------------|
-| 1    |Input test data SK01|Press "Save" button on "Add+" page||
-| 2    |Input test data SK01|Press "Save" button on "Add+" page||
-| 3    |Open "Result" page|Look at "Fillipe Mota" record| 464180|
-| 4    |Open "Result" page|Look at "Jamie Foy" record| 645767.3 |
+| 1    |Open "Result" page|Look at "Fillipe Mota" record| 464180|
+| 2    |Open "Result" page|Look at "Jamie Foy" record| 645767.3 |
 
 3. **Clear all results**
 
 | Step | Input | Action                | Expected output |
 |------|-------|-----------------------|-----------------|
-| 1    |Input test data SK01|Press "Save" button on "Add+" page||
-| 2    |Input test data SK01|Press "Save" button on "Add+" page||
-| 3    |Open "Result" page|Look at "Fillipe Mota" record| 464180|
-| 4    |Open "Result" page|Look at "Jamie Foy" record| 645767.3 |
-| 5    |Button click|Press "Clear" button|Empty results table|
+| 1    |Open "Result" page|Look at "Fillipe Mota" record| 464180|
+| 2    |Open "Result" page|Look at "Jamie Foy" record| 645767.3 |
+| 3    |Button click|Press "Clear" button|Empty results table|
 
 ## Graphical User Interface
 
@@ -116,5 +104,5 @@ Tables below provide information about test cases. All tests are performed with 
 
 ## ERD
 
-![ERD](Final_Ass_ERD.drawio.png "Version 1 ERD")
+![ERD](Final_Ass_ERD.png "Version 2 ERD")
 
