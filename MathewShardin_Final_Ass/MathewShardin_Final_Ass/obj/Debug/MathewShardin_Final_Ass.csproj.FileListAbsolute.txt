@@ -26,3 +26,4 @@ C:\University\Period_4\C#\Final_Assignment\end_ass_C-_MathewShardin_IT1A\MathewS
 C:\University\Period_4\C#\Final_Assignment\end_ass_C-_MathewShardin_IT1A\MathewShardin_Final_Ass\MathewShardin_Final_Ass\obj\Debug\MathewShardin_Final_Ass.csproj.CoreCompileInputs.cache
 C:\University\Period_4\C#\Final_Assignment\end_ass_C-_MathewShardin_IT1A\MathewShardin_Final_Ass\MathewShardin_Final_Ass\obj\Debug\MathewShardin_Final_Ass.exe
 C:\University\Period_4\C#\Final_Assignment\end_ass_C-_MathewShardin_IT1A\MathewShardin_Final_Ass\MathewShardin_Final_Ass\obj\Debug\MathewShardin_Final_Ass.pdb
+C:\University\Period_4\C#\Final_Assignment\end_ass_C-_MathewShardin_IT1A\MathewShardin_Final_Ass\MathewShardin_Final_Ass\obj\Debug\MathewShardin_Final_Ass.About.resources
